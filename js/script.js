@@ -98,16 +98,13 @@ class Calculator {
     }
 
     showMeme(src) {
-        const img = document.createElement("img")
-        const waitSeconds = 2
-        const timeOutPeriod = waitSeconds * 1000
-        const closeModalBox = "document.querySelector('.modal-box').style.display = 'none'"
-
-        img.src = src
-
-        document.getElementById('modalImage').appendChild(img)
-        document.querySelector('.modal-box').style.display = 'grid'
-        setTimeout(closeModalBox, timeOutPeriod)
+        Swal.fire({
+            imageUrl: src,
+            imageAlt: 'A meme',
+            
+            timer: 2000,
+            timerProgressBar: true,
+          })
     }
 }
 
