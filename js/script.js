@@ -90,10 +90,10 @@ class Calculator {
         let currentOperandText = this.currentOperandTextElement.innerText
         if (currentOperandText === '42') {
             document.getElementById('modalImage').innerHTML = ''
-            this.showMeme("https://juststickers.in/wp-content/uploads/2017/04/42-the-answer-to-life-universe-and-everything.png")
+            this.showMeme("img/42-the-answer-to-life-universe-and-everything.png")
         } else if (this.currentOperandTextElement.innerText === '9,000') {
             document.getElementById('modalImage').innerHTML = ''
-            this.showMeme("https://media1.tenor.com/images/5d3022e7d8f6b0e36b86170b676c601c/tenor.gif?itemid=4474083")
+            this.showMeme("img/over9000.gif")
         }
     }
 
